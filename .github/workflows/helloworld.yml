@@ -1,6 +1,6 @@
 name: Hello World
 
-on: [push]
+on: [repository_dispatch]
 
 jobs:
   build:
@@ -12,6 +12,7 @@ jobs:
     - name: Run PowerShell Hello World script
       run: Write-Output 'Hello World!'
     - name: Run a multi-line PowerShell script
+      if: github.event.action == "demo"
       run: |
         $psversiontable;
         Get-Process;
