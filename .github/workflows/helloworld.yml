@@ -13,5 +13,5 @@ jobs:
       run: Write-Output 'Hello World!'
     - name: Run a multi-line PowerShell script
       run: |
-        $psversiontable,
-        Get-Process.
+        $psversiontable;
+        Get-Process;
