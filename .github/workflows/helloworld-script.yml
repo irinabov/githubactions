@@ -3,7 +3,7 @@ name: Hello World script
 on: [repository_dispatch]
 
 jobs:
-  hello-world:
+  hello-world-script:
 
     runs-on: windows-latest
 
