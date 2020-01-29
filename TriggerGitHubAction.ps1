@@ -12,7 +12,7 @@ $uri = ('https://api.github.com/repos/{0}/{1}/dispatches' -f $GithubUserName, $G
 
 #region web request call
 $Body = @{
-    'event_type' = 'demo' #used in the if condition of the Github Action
+    'event_type' = 'script' #used in the if condition of the Github Action
 } | ConvertTo-Json
 
 

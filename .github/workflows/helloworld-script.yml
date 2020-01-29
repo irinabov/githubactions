@@ -10,4 +10,5 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run PowerShell Hello World script
-      run: "& .\$GITHUB_WORKSPACE\Hello-World.ps1"
+      if: github.event.action == 'script'
+      run: \& .\$GITHUB_WORKSPACE\Hello-World.ps1
