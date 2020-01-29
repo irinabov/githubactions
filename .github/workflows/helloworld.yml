@@ -3,7 +3,7 @@ name: Hello World
 on: [repository_dispatch]
 
 jobs:
-  build:
+  hello world:
 
     runs-on: windows-latest
 
